@@ -1,14 +1,14 @@
 .top-panel {
-    background-image: url('panel-sprite.svg'); /* Тепер тут SVG */
+    background-image: url('top_panel.svg');
     background-repeat: repeat-x;
-    height: 60px; /* Можеш ставити будь-яку висоту, вектор буде чітким */
+    height: 60px;
     background-size: auto 100%;
     
 }}
 
 .top-panel-svg {
     width: 100%;
-    height: 60px; /* Висота панелі */
+    height: 60px;
     display: block;
 }
 
