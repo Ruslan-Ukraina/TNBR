@@ -1,17 +1,19 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: white;
+    /* Убираем фон для body, так как панель теперь будет его задавать */
 }
 
 .top-panel {
     background-image: url('top_panel.png');
     background-repeat: repeat-x;
 
-    height: 87px; 
+    /* 1. Новая высота, соответствующая твоему новому спрайту из Aseprite */
+    height: 60px; 
 
-    background-size: auto 87px;
+    /* 2. Убираем background-size! Браузер сам возьмет размер картинки 1:1 */
 
+    /* 3. Оставляем на всякий случай для четкости на Retina-экранах (телефонах) */
     image-rendering: pixelated; 
-    image-rendering: crisp-edges;
+    image-rendering: crisp-edges; 
 }
