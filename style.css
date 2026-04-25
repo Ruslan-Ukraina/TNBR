@@ -1,40 +1,13 @@
-:root {
-    --bg-outside: #3a3a3a; /* Колір навколо вікна (темний) */
-    --window-bg: #ffffff;
-    --border-color: rgba(0,0,0,0.1);
-}
-
-/* Якщо у користувача темна тема в системі */
-@media (prefers-color-scheme: dark) {
-    :root {
-        --bg-outside: #1e1e1e;
-        --window-bg: #252525;
-        --border-color: rgba(255,255,255,0.1);
-    }
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    background-color: var(--bg-outside);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-}
-
-.window-frame {
-    width: 95%;
-    max-width: 1400px;
-    height: 90vh;
-    background-color: var(--window-bg);
-    border-radius: 12px; /* Закруглені кути як в macOS */
-    box-shadow: 0 30px 60px rgba(0,0,0,0.4);
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    border: 1px solid var(--border-color);
-}
+.top-panel {
+    background-image: url('top_panel.svg'); /* Тепер тут SVG */
+    background-repeat: repeat-x;
+    height: 60px; /* Можеш ставити будь-яку висоту, вектор буде чітким */
+    background-size: auto 100%;
+    
+    /* Додаємо легку тінь, щоб відділити панель від білого фону */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}}
 
 .top-panel-svg {
     width: 100%;
