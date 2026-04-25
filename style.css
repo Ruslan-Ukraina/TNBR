@@ -1,40 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap');
-
-:root {
-    --bg-color: #0d0d0f;
-    --text-color: #e0e0e0;
-    --accent-color: #ff2a6d; 
-    --secondary-accent: #05d9e8;
-    --glass: rgba(20, 20, 25, 0.7);
-}
-
 body {
     margin: 0;
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    font-family: 'Space Mono', monospace;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px);
-    background-size: 100% 3px;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    padding: 0;
+    background-color: white; /* Фон страницы — белый */
 }
 
-/* Навігація */
-.main-nav {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    padding: 20px;
-    background: var(--glass);
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    position: sticky;
-    top: 0;
-    z-index: 100;
-}
-
-.nav-link {
+.top-panel {
+    /* Мы указываем имя файла, который ты только что загрузил */
+    background-image: url('top_panel.png');
+    
+    /* Заставляем его повторяться только вправо (по оси X) */
+    background-repeat: repeat-x;
+    
+    /* Высота должна быть ровно 29 пикселей, как у твоего спрайта */
+    height: 29px;
+    
+    width: 100%;
+}.nav-link {
     text-decoration: none;
     color: var(--text-color);
     font-weight: bold;
