@@ -1,5 +1,5 @@
 .top-panel {
-    background-image: url('top_panel.svg'); /* Тепер тут SVG */
+    background-image: url('panel-sprite.svg'); /* Тепер тут SVG */
     background-repeat: repeat-x;
     height: 60px; /* Можеш ставити будь-яку висоту, вектор буде чітким */
     background-size: auto 100%;
