@@ -1,107 +1,17 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: white; /* Фон страницы — белый */
+    background-color: white;
 }
 
 .top-panel {
-    /* Мы указываем имя файла, который ты только что загрузил */
     background-image: url('top_panel.png');
-    
-    /* Заставляем его повторяться только вправо (по оси X) */
     background-repeat: repeat-x;
-    
-    /* Высота должна быть ровно 29 пикселей, как у твоего спрайта */
-    height: 29px;
-    
-    width: 100%;
-}.nav-link {
-    text-decoration: none;
-    color: var(--text-color);
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 0.9em;
-    letter-spacing: 1px;
-    transition: 0.3s;
-    opacity: 0.7;
-}
 
-.nav-link:hover, .nav-link.active {
-    opacity: 1;
-    color: var(--accent-color);
-    text-shadow: 0 0 8px var(--accent-color);
-}
+    height: 87px; 
 
-/* Контент */
-main {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-}
+    background-size: auto 87px;
 
-.glass-panel {
-    background: var(--glass);
-    backdrop-filter: blur(15px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 40px;
-    border-radius: 15px;
-    text-align: center;
-    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
-    max-width: 600px;
-}
-
-.status-bar {
-    font-size: 0.7em;
-    color: var(--secondary-accent);
-    margin-bottom: 20px;
-    letter-spacing: 2px;
-}
-
-h1 {
-    font-size: 2.2em;
-    margin-bottom: 15px;
-    color: var(--accent-color);
-}
-
-/* Кнопки */
-.buttons-row {
-    display: flex;
-    gap: 15px;
-    justify-content: center;
-    margin-top: 30px;
-}
-
-button {
-    padding: 12px 25px;
-    border: none;
-    border-radius: 5px;
-    font-family: 'Space Mono', monospace;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s;
-    text-transform: uppercase;
-}
-
-.primary-btn {
-    background: var(--accent-color);
-    color: white;
-    box-shadow: 0 0 15px rgba(255, 42, 109, 0.4);
-}
-
-.primary-btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 0 25px rgba(255, 42, 109, 0.6);
-}
-
-.secondary-btn {
-    background: transparent;
-    color: var(--secondary-accent);
-    border: 1px solid var(--secondary-accent);
-}
-
-.secondary-btn:hover {
-    background: var(--secondary-accent);
-    color: black;
+    image-rendering: pixelated; 
+    image-rendering: crisp-edges;
 }
